@@ -289,6 +289,36 @@ layout: statement
 </div>
 
 ---
+layout: default
+---
+
+# And lock-in is only half of it
+
+<div class="text-sm opacity-70 -mt-2 mb-6">Across a company, feature flagging is rarely <em>one</em> thing. Different teams, different eras, different tools — homegrown here, one vendor there, two more services over. Nothing standardized.</div>
+
+<div class="grid grid-cols-3 gap-6 items-stretch">
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:view-off class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">You can't observe it</div>
+    <div class="text-sm opacity-70">Every approach exposes evaluations differently — or not at all. No common signal to hang monitoring on.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:analytics class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">You can't get insight</div>
+    <div class="text-sm opacity-70">Which flags are live? Who's evaluating what? What's safe to delete? Answerable per-tool, never across the org.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:search class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">You can't find patterns</div>
+    <div class="text-sm opacity-70">You can't spot what you can't see — and often you don't even know how it all works in the first place.</div>
+  </div>
+</div>
+
+<div class="text-sm opacity-80 text-center mt-8">
+  A standard isn't only about swapping vendors. It's a <b>common contract</b> — one way to instrument, observe, and reason about flags <em>everywhere</em>.
+</div>
+
+---
 layout: image
 image: /img/breaks/frost-fence.jpg
 ---
