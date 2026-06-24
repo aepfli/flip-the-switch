@@ -89,16 +89,24 @@ image: /img/simon.jpg
 
 **Simon Schrottner**
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-  <div class="rounded border border-gray-200 p-4 text-center flex flex-col items-center justify-between">
-    <img src="/img/openfeature-horizontal-black.svg" class="h-14 object-contain dark:invert" />
-    <div class="text-sm mt-3">OpenFeature Maintainer</div>
-  </div>
-  <div class="rounded border border-gray-200 p-4 text-center flex flex-col items-center justify-between">
-    <div class="dark:bg-white dark:p-2 dark:rounded">
-      <img src="/img/cncf-ambassador-color.svg" class="h-14 object-contain" />
+<div class="grid grid-cols-3 gap-3 mt-6">
+  <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
+    <div class="h-12 flex items-center justify-center">
+      <img src="/img/openfeature-horizontal-black.svg" class="max-h-10 object-contain dark:invert" />
     </div>
-    <div class="text-sm mt-3">CNCF Ambassador</div>
+    <div class="text-xs mt-3">OpenFeature Maintainer</div>
+  </div>
+  <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
+    <div class="h-12 flex items-center justify-center dark:bg-white dark:px-2 dark:rounded">
+      <img src="/img/cncf-ambassador-color.svg" class="max-h-12 object-contain" />
+    </div>
+    <div class="text-xs mt-3">CNCF Ambassador</div>
+  </div>
+  <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
+    <div class="h-12 flex items-center justify-center dark:bg-white dark:px-2 dark:rounded">
+      <img src="/img/logos/aaif-ambassador.png" class="max-h-12 object-contain" />
+    </div>
+    <div class="text-xs mt-3">AAIF Ambassador</div>
   </div>
 </div>
 
@@ -155,6 +163,30 @@ layout: statement
 ---
 
 Feature flags <span v-mark.highlight.yellow="1">enable, disable, or change behavior</span> of features in a product or service <span v-mark.highlight.yellow="2">at runtime</span> — <span v-mark.highlight.yellow="3">without modifying the source code</span>.
+
+---
+layout: default
+---
+
+# Coordinate & Target
+
+<div class="grid grid-cols-3 gap-6 mt-8 items-stretch">
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:time class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">Synchronized rollouts</div>
+    <div class="text-sm opacity-70">ship a new feature to every service at the same moment, without coordinating deploys</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:chart-multi-line class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">A/B experiments</div>
+    <div class="text-sm opacity-70">serve two variants, measure which wins, close the loop with data</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
+    <carbon:user-multiple class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">Targeted release</div>
+    <div class="text-sm opacity-70">beta testers, enterprise tier, a single region — each sees a different flag value</div>
+  </div>
+</div>
 
 ---
 layout: default
