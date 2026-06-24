@@ -299,23 +299,23 @@ layout: default
 <div class="grid grid-cols-3 gap-6 items-stretch">
   <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
     <carbon:view-off class="text-5xl opacity-70"/>
-    <div class="font-bold text-lg">You can't observe it</div>
-    <div class="text-sm opacity-70">Every approach exposes evaluations differently — or not at all. No common signal to hang monitoring on.</div>
+    <div class="font-bold text-lg">You can't see across it</div>
+    <div class="text-sm opacity-70">No single picture of what's on, off, or rolling out. Every team's flags are a black box to everyone else.</div>
   </div>
   <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
     <carbon:analytics class="text-5xl opacity-70"/>
     <div class="font-bold text-lg">You can't get insight</div>
-    <div class="text-sm opacity-70">Which flags are live? Who's evaluating what? What's safe to delete? Answerable per-tool, never across the org.</div>
+    <div class="text-sm opacity-70">Which flags are live? Who's affected? What's safe to remove? Per-tool, maybe — across the org, never.</div>
   </div>
   <div class="rounded-lg border border-gray-200 shadow-sm p-6 text-center flex flex-col items-center gap-3 h-full">
-    <carbon:search class="text-5xl opacity-70"/>
-    <div class="font-bold text-lg">You can't find patterns</div>
-    <div class="text-sm opacity-70">You can't spot what you can't see — and often you don't even know how it all works in the first place.</div>
+    <carbon:help class="text-5xl opacity-70"/>
+    <div class="font-bold text-lg">You can't understand the system</div>
+    <div class="text-sm opacity-70">To know how it behaves, someone has to read every service. The people who need the answer most often can't.</div>
   </div>
 </div>
 
-<div class="text-sm opacity-80 text-center mt-8">
-  A standard isn't only about swapping vendors. It's a <b>common contract</b> — one way to instrument, observe, and reason about flags <em>everywhere</em>.
+<div class="text-base opacity-85 text-center mt-8 max-w-3xl mx-auto">
+  We want to <b>observe</b> — to get insight and understand the system. That's not the same as running <em>observability</em>, and it shouldn't require knowing the code.
 </div>
 
 ---
@@ -665,53 +665,6 @@ layout: default
 <div class="text-sm opacity-70 text-center mt-8">
   The standard isn't a constraint on the market. It's the floor the market builds on.
 </div>
-
----
-layout: default
----
-
-# You're in good company
-
-<div class="text-sm opacity-70 -mt-2 mb-6">A sample of public adopters:</div>
-
-<div class="grid grid-cols-5 gap-3">
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center h-20">
-    <span class="font-bold text-xl">Otto</span>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/ebay-color.svg" class="h-6 object-contain"/>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/ford-color.svg" class="h-10 object-contain"/>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/spotify-color.svg" class="h-6 object-contain"/>
-    <span class="font-semibold text-gray-800 text-sm">Spotify</span>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/google-color.svg" class="h-6 object-contain"/>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/datadog-color.svg" class="h-7 object-contain"/>
-    <span class="font-semibold text-gray-800 text-sm">Datadog</span>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/bookingdotcom.svg" class="h-7 object-contain"/>
-    <span class="font-semibold text-gray-800 text-sm">Booking</span>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/miro.svg" class="h-6 object-contain"/>
-    <span class="font-semibold text-gray-800 text-sm">Miro</span>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center gap-2 h-20 dark:bg-white">
-    <img src="/img/logos/flagsmith.svg" class="h-6 object-contain"/>
-  </div>
-  <div class="p-3 rounded border border-gray-200 flex items-center justify-center h-20 opacity-60">
-    <span class="text-sm italic">…and more</span>
-  </div>
-</div>
-
-<div class="text-sm opacity-60 italic text-center mt-6">Competitors and adopters, on one standard — maybe you next?</div>
 
 ---
 layout: image
