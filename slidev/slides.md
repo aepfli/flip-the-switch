@@ -110,7 +110,12 @@ image: /img/simon.jpg
   </div>
 </div>
 
-<div class="pt-4 text-sm opacity-70">Open Source enthusiast — I help build a standard in the open.</div>
+<div class="pt-4 flex items-center gap-2 text-sm opacity-85">
+  <img src="/img/logos/flagsmith.svg" class="h-4 object-contain dark:invert"/>
+  <span>Fractional Developer Advocate @ Flagsmith</span>
+</div>
+
+<div class="pt-2 text-sm opacity-70">Open Source enthusiast — I help build a standard in the open.</div>
 
 <div class="pt-6 text-xs opacity-70 space-y-1">
   <div><carbon:email class="inline"/> simon@schrottner.at &nbsp;·&nbsp; <carbon:link class="inline"/> <a href="https://schrottner.at" target="_blank">schrottner.at</a></div>
@@ -488,36 +493,32 @@ layout: center
 
 ---
 layout: default
-transition: fade
 ---
 
-# Swap the vendor, not your code
+# How an evaluation works
 
-<div class="text-sm mb-4">
-  This happens <b>once, at startup</b>. Your call sites never change.
+<div class="text-sm opacity-70 -mt-2 mb-4">
+  Register a provider <b>once, at startup</b>. After that, every evaluation is the same shape — in any language, against any vendor.
 </div>
 
-```java {2}
+````md magic-move {lines: true}
+```java {1-2}
+var api = OpenFeatureAPI.getInstance();
+api.setProviderAndWait(new FlagdProvider(config));
+```
+```java {4}
+var api = OpenFeatureAPI.getInstance();
+api.setProviderAndWait(new FlagdProvider(config));
+
+var client = api.getClient();
+```
+```java {5}
 var api = OpenFeatureAPI.getInstance();
 api.setProviderAndWait(new FlagdProvider(config));
 
 var client = api.getClient();
 boolean on = client.getBooleanValue("v2_enabled", false);
 ```
-
-<div class="text-xs opacity-60 mt-2">FlagdProvider — cloud-native reference, open source</div>
-
----
-layout: default
-transition: fade
----
-
-# Swap the vendor, not your code
-
-<div class="text-sm mb-4">
-  This happens <b>once, at startup</b>. Your call sites never change.
-</div>
-
 ```java {2}
 var api = OpenFeatureAPI.getInstance();
 api.setProviderAndWait(new FlagsmithProvider(flagsmithConfig));
@@ -525,12 +526,17 @@ api.setProviderAndWait(new FlagsmithProvider(flagsmithConfig));
 var client = api.getClient();
 boolean on = client.getBooleanValue("v2_enabled", false);
 ```
+````
 
-<div class="text-xs opacity-60 mt-2">
-  One line changes. The price hike, the acquisition, the stalled roadmap — survivable.
+<div class="grid grid-cols-4 gap-3 mt-6 text-center text-xs">
+  <div class="p-2 rounded border border-gray-200"><div class="font-bold">1 · Provider</div><div class="opacity-70">connect a flag source</div></div>
+  <div class="p-2 rounded border border-gray-200"><div class="font-bold">2 · Client</div><div class="opacity-70">cheap, scoped handle</div></div>
+  <div class="p-2 rounded border border-gray-200"><div class="font-bold">3 · Evaluate</div><div class="opacity-70">name + default → value</div></div>
+  <div class="p-2 rounded border border-orange-400/70"><div class="font-bold">↺ Swap</div><div class="opacity-70">only the provider line</div></div>
 </div>
-<div class="text-xs opacity-60 mt-2">
-  <carbon:document class="inline-block align-middle" /> ~130 providers in the ecosystem —
+
+<div class="text-xs opacity-60 mt-4">
+  <carbon:document class="inline-block align-middle" /> The default is mandatory — your code always gets a value back. ~130 providers in the ecosystem:
   <a href="https://openfeature.dev/ecosystem" target="_blank">openfeature.dev/ecosystem</a>
 </div>
 
