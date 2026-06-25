@@ -332,7 +332,7 @@ layout: statement
 
 # Then the ground shifts
 
-<div class="grid grid-cols-3 gap-6 mt-10 max-w-4xl mx-auto">
+<div class="grid grid-cols-2 gap-5 mt-8 max-w-3xl mx-auto">
   <div class="p-5 rounded-lg border border-gray-300">
     <carbon:money class="text-4xl opacity-70 mb-2"/>
     <div class="font-bold">Prices go up</div>
@@ -348,6 +348,11 @@ layout: statement
     <div class="font-bold">They stop caring</div>
     <div class="text-sm opacity-70 mt-1">The product stalls. Support slows. You're stuck on it anyway.</div>
   </div>
+  <div class="p-5 rounded-lg border border-gray-300">
+    <carbon:direction-fork class="text-4xl opacity-70 mb-2"/>
+    <div class="font-bold">It no longer fits you</div>
+    <div class="text-sm opacity-70 mt-1">Your needs and process move on. You've outgrown the tool — but the code is still wired to it.</div>
+  </div>
 </div>
 
 <div class="text-lg opacity-80 mt-10">
@@ -355,7 +360,7 @@ layout: statement
 </div>
 
 <!--
-Beat: Three ways the ground shifts without your input: prices triple, they get acquired, they stop caring. Punchline — the toggle was easy, the lock-in is the bill.
+Beat: Four ways the ground shifts without your input: prices triple, they get acquired, they stop caring, or you simply outgrow the tool. Punchline — the toggle was easy, the lock-in is the bill.
 Transition: And lock-in at one vendor is only half the pain — zoom out to the whole company.
 -->
 
