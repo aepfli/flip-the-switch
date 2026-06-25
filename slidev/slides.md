@@ -693,27 +693,33 @@ layout: default
 
 # It still does the real work
 
-<div class="text-sm opacity-70 -mt-2 mb-4">Vendor-neutral doesn't mean lowest-common-denominator. Pass context, get dynamic, per-subject evaluation.</div>
+<div class="text-sm opacity-70 -mt-2 mb-6">Vendor-neutral doesn't mean lowest-common-denominator. The spec goes well past a single on/off check — it standardises a whole evaluation model.</div>
 
-```java {1-5|6-7|9-10}
-Map<String, Value> attrs = new HashMap<>();
-attrs.put("email",
-    new Value(session.getAttribute("email")));
-attrs.put("region",
-    new Value("eu"));
-EvaluationContext reqCtx =
-    new ImmutableContext(targetingKey, attrs);
+<div class="grid grid-cols-2 gap-5">
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2">
+    <div class="flex items-center gap-3"><carbon:user-profile class="text-3xl opacity-70"/><div class="font-bold text-lg">Evaluation Context</div></div>
+    <div class="text-sm opacity-80">Dynamic, per-subject targeting — per user, region, tenant — plus deterministic percentage rollouts.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2">
+    <div class="flex items-center gap-3"><carbon:plug class="text-3xl opacity-70"/><div class="font-bold text-lg">Hooks</div></div>
+    <div class="text-sm opacity-80">Inject behaviour at every evaluation — logging, telemetry, context enrichment — without touching call sites.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2">
+    <div class="flex items-center gap-3"><carbon:notification class="text-3xl opacity-70"/><div class="font-bold text-lg">Events</div></div>
+    <div class="text-sm opacity-80">React to provider state — ready, stale, configuration changed — and re-render or reload on the fly.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2">
+    <div class="flex items-center gap-3"><carbon:chart-line-smooth class="text-3xl opacity-70"/><div class="font-bold text-lg">Tracking</div></div>
+    <div class="text-sm opacity-80">Tie evaluations to business outcomes — clicks, conversions, revenue — to close the experiment loop.</div>
+  </div>
+</div>
 
-boolean on =
-    client.getBooleanValue("v2_enabled", false, reqCtx);
-```
-
-<div class="text-xs opacity-60 mt-4">
-  <carbon:information class="inline-block align-middle" /> Per-user, per-region, per-tenant targeting and percentage rollouts — the standard defines the <em>input</em>, the provider does the evaluation.
+<div class="text-xs opacity-60 mt-5">
+  <carbon:information class="inline-block align-middle" /> The standard defines the inputs and the lifecycle; the provider does the evaluation. You get the rich model everywhere — not the lowest common denominator.
 </div>
 
 <!--
-Beat: Vendor-neutral is not lowest-common-denominator. Build an EvaluationContext (email, region, targeting key) and pass it — clicks reveal context build, then the same evaluate call with context. The spec defines the input shape; the provider still does the real dynamic targeting and percentage rollouts.
+Beat: The counter-point: a neutral standard is NOT bare-minimum. It standardises a full evaluation model — Evaluation Context (dynamic per-user/region/tenant targeting + percentage rollouts), Hooks (logging/telemetry/enrichment at every call), Events (react to provider state), Tracking (tie flags to business outcomes). We think further than on/off. Don't read the list — pick one or two to riff on.
 Transition: So pull it all together into one promise.
 -->
 
