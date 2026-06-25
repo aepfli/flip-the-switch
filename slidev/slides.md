@@ -35,7 +35,7 @@ layout: section
   Narrative rhythm (do not break):
     Hook (Knight Capital) → Who I am → What flags buy you → The trap (lock-in)
     → Act 2: Not a new problem — OpenTelemetry (merge) · Kubernetes (conformance) · the lesson
-    → Act 3: OpenFeature — born open from day one (the contrast) → how it works (provider + context)
+    → Act 3: OpenFeature — one standard from day one, no merge needed (the contrast) → how it works (provider + context)
     → Act 4: What an open standard unlocks — ecosystem · room for startups · adopters
     → Act 5: What it takes to build a standard in the open — the hard, human part
     → Take-aways → Community CTA
@@ -551,16 +551,16 @@ OpenFeature is an <span v-mark.highlight.yellow="1">open specification</span> th
 
 <!--
 Beat: The formal definition. Two marks: it's an open specification, and a vendor-agnostic, community-driven API that works with your existing flag tool. Emphasis on "works with your favorite tool" — not a replacement.
-Transition: Now the part that makes OpenFeature different from OTel — it was born open.
+Transition: Now the part that makes OpenFeature different from OTel — it never needed a merge.
 -->
 
 ---
 layout: default
 ---
 
-# The same bet — but born open
+# The same bet — one standard from day one
 
-<div class="text-sm opacity-70 -mt-2 mb-8">OpenTelemetry had to <em>merge</em> two rivals to undo the fragmentation. OpenFeature skipped the fight — competing vendors collaborated <strong>before</strong> anyone shipped a rival standard.</div>
+<div class="text-sm opacity-70 -mt-2 mb-8">OpenTracing and OpenCensus were both open — the trouble was having <em>two</em>. It took years to recognise they were one problem and merge into OpenTelemetry. OpenFeature's competing vendors started at a single table — one standard, no merge.</div>
 
 <div class="grid grid-cols-4 gap-4">
 
@@ -591,11 +591,11 @@ layout: default
 </div>
 
 <div class="text-sm opacity-70 text-center mt-8">
-  No merge needed. The collaboration <em>was</em> the starting point.
+  No merge needed — the convergence <em>was</em> the starting point.
 </div>
 
 <!--
-Beat: The contrast with OTel: no after-the-fact merge. Timeline — KubeCon Valencia 2022, CNCF Sandbox, Incubating 2023, multi-vendor today. Competitors collaborated BEFORE anyone shipped a rival standard. The collaboration was the starting point.
+Beat: Correct the easy misread — openness wasn't the difference; OTel's predecessors were open too. The difference is convergence: observability fragmented into two open projects and took years to merge, while OpenFeature's rival vendors built ONE standard together from the start. Timeline: KubeCon Valencia 2022 → Sandbox → Incubating 2023 → multi-vendor today.
 Transition: Enough history — let me show you how it actually works.
 -->
 
