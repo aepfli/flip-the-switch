@@ -916,27 +916,27 @@ layout: default
 
 # Standards aren't free
 
-<div class="text-sm opacity-70 -mt-2 mb-6">Worth it — but go in with eyes open. The honest costs:</div>
+<div class="text-sm opacity-70 -mt-2 mb-4">Worth it — but go in with eyes open. The honest costs:</div>
 
-<div class="space-y-3 max-w-3xl mx-auto">
-  <div class="p-4 rounded-lg border border-red-500/40 shadow-sm flex items-start gap-3">
-    <carbon:hourglass class="text-2xl opacity-70 shrink-0 mt-0.5"/>
+<div class="space-y-2 max-w-3xl mx-auto text-sm">
+  <div class="p-3 rounded-lg border border-red-500/40 flex items-start gap-3">
+    <carbon:hourglass class="text-xl opacity-70 shrink-0 mt-0.5"/>
     <div><span class="font-bold">Consensus is slow</span> — <span class="opacity-80">standards can ossify before they ship.</span></div>
   </div>
-  <div class="p-4 rounded-lg border border-red-500/40 shadow-sm flex items-start gap-3">
-    <carbon:scales class="text-2xl opacity-70 shrink-0 mt-0.5"/>
+  <div class="p-3 rounded-lg border border-red-500/40 flex items-start gap-3">
+    <carbon:scales class="text-xl opacity-70 shrink-0 mt-0.5"/>
     <div><span class="font-bold">Governance conflicts</span> — <span class="opacity-80">competing vendors shape the spec as much as user needs do.</span></div>
   </div>
-  <div class="p-4 rounded-lg border border-red-500/40 shadow-sm flex items-start gap-3">
-    <carbon:migrate class="text-2xl opacity-70 shrink-0 mt-0.5"/>
+  <div class="p-3 rounded-lg border border-red-500/40 flex items-start gap-3">
+    <carbon:migrate class="text-xl opacity-70 shrink-0 mt-0.5"/>
     <div><span class="font-bold">Migration still costs</span> — <span class="opacity-80">moving between compliant implementations is rarely free.</span></div>
   </div>
-  <div class="p-4 rounded-lg border border-red-500/40 shadow-sm flex items-start gap-3">
-    <carbon:chart-minimum class="text-2xl opacity-70 shrink-0 mt-0.5"/>
+  <div class="p-3 rounded-lg border border-red-500/40 flex items-start gap-3">
+    <carbon:chart-minimum class="text-xl opacity-70 shrink-0 mt-0.5"/>
     <div><span class="font-bold">Lowest common denominator</span> — <span class="opacity-80">specs converge on what everyone agrees, not on what's best.</span></div>
   </div>
-  <div class="p-4 rounded-lg border border-red-500/40 shadow-sm flex items-start gap-3">
-    <carbon:fade class="text-2xl opacity-70 shrink-0 mt-0.5"/>
+  <div class="p-3 rounded-lg border border-red-500/40 flex items-start gap-3">
+    <carbon:fade class="text-xl opacity-70 shrink-0 mt-0.5"/>
     <div><span class="font-bold">Survival isn't guaranteed</span> — <span class="opacity-80">a standard only matters if it's adopted and maintained; plenty fade.</span></div>
   </div>
 </div>
