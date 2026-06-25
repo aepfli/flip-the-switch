@@ -109,33 +109,34 @@ image: /img/simon.jpg
 
 **Simon Schrottner**
 
-<div class="grid grid-cols-3 gap-3 mt-6">
+<div class="grid grid-cols-2 gap-3 mt-6">
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
     <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
       <img src="/img/openfeature-horizontal-black.svg" class="max-h-9 object-contain" />
     </div>
-    <div class="text-xs mt-3">OpenFeature Maintainer</div>
+    <div class="text-xs mt-2">OpenFeature Maintainer</div>
   </div>
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
     <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
       <img src="/img/cncf-ambassador-color.svg" class="max-h-12 object-contain" />
     </div>
-    <div class="text-xs mt-3">CNCF Ambassador</div>
+    <div class="text-xs mt-2">CNCF Ambassador</div>
   </div>
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
     <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
       <img src="/img/logos/aaif-ambassador.png" class="max-h-12 object-contain" />
     </div>
-    <div class="text-xs mt-3">AAIF Ambassador</div>
+    <div class="text-xs mt-2">AAIF Ambassador</div>
+  </div>
+  <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
+    <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
+      <img src="/img/logos/flagsmith.svg" class="max-h-7 object-contain" />
+    </div>
+    <div class="text-xs mt-2">Developer Advocate <span class="opacity-60">· fractional</span></div>
   </div>
 </div>
 
-<div class="pt-4 flex items-center gap-2 text-sm opacity-85">
-  <img src="/img/logos/flagsmith.svg" class="h-4 object-contain dark:invert"/>
-  <span>Fractional Developer Advocate @ Flagsmith</span>
-</div>
-
-<div class="pt-2 text-sm opacity-70">Open Source enthusiast — I help build a standard in the open.</div>
+<div class="pt-4 text-sm opacity-70">Open Source enthusiast — I help build a standard in the open.</div>
 
 <div class="pt-6 text-xs opacity-70 space-y-1">
   <div><carbon:email class="inline"/> simon@schrottner.at &nbsp;·&nbsp; <carbon:link class="inline"/> <a href="https://schrottner.at" target="_blank">schrottner.at</a></div>
@@ -420,31 +421,38 @@ Transition: Start with observability — OpenTelemetry.
 layout: default
 ---
 
-# OpenTelemetry: merge instead of fight
+# OpenTelemetry: rivals, one standard
 
 <div class="absolute top-8 right-8 opacity-80">
   <logos:opentelemetry class="h-8"/>
 </div>
 
-<div class="text-sm opacity-70 -mt-2 mb-6">Two competing observability projects looked at the fragmentation they'd created — and joined forces.</div>
+<div class="text-sm opacity-70 -mt-2 mb-6">Two competing projects — <strong>OpenTracing</strong> and <strong>OpenCensus</strong> — merged instead of fighting. What matters isn't the history; it's what the shared standard <em>unlocked</em>.</div>
 
-<div class="grid grid-cols-2 gap-6 items-stretch">
-  <div class="rounded-lg border border-gray-200 shadow-sm p-6 flex flex-col gap-2 h-full">
-    <div class="font-bold text-lg">The fragmentation</div>
-    <div class="text-sm opacity-80"><strong>OpenTracing</strong> and <strong>OpenCensus</strong> — two standards solving the same problem. Instrument for one, you couldn't use the other. Vendors and users had to pick a side.</div>
+<div class="grid grid-cols-3 gap-5 items-stretch">
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2 h-full">
+    <carbon:edit class="text-3xl opacity-70"/>
+    <div class="font-bold text-lg">Instrument once</div>
+    <div class="text-sm opacity-80">One vocabulary for traces and metrics — write it a single time, in your code.</div>
   </div>
-  <div class="rounded-lg border border-gray-200 shadow-sm p-6 flex flex-col gap-2 h-full">
-    <div class="font-bold text-lg">The merge (2019)</div>
-    <div class="text-sm opacity-80">Instead of competing to the death, they <strong>merged into OpenTelemetry</strong>. Today it's the second-most-active CNCF project — the default way the industry does telemetry.</div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2 h-full">
+    <carbon:arrows-horizontal class="text-3xl opacity-70"/>
+    <div class="font-bold text-lg">Send it anywhere</div>
+    <div class="text-sm opacity-80">Swap or mix observability vendors without re-instrumenting a thing.</div>
+  </div>
+  <div class="rounded-lg border border-gray-200 shadow-sm p-5 flex flex-col gap-2 h-full">
+    <carbon:earth class="text-3xl opacity-70"/>
+    <div class="font-bold text-lg">An industry default</div>
+    <div class="text-sm opacity-80">The vendor-neutral way telemetry works now — built by former rivals, together.</div>
   </div>
 </div>
 
 <div class="text-sm opacity-70 text-center mt-8">
-  Standards didn't just solve a technical problem. They changed how rivals <em>collaborated</em>.
+  A community that converges on a standard builds <em>on</em> it together — instead of around each other.
 </div>
 
 <!--
-Beat: OpenTracing and OpenCensus split the observability world; in 2019 they MERGED into OpenTelemetry instead of fighting to the death. Now the second-most-active CNCF project. Key word: rivals chose to collaborate.
+Beat: We've solved this before. OpenTracing and OpenCensus were rivals; they merged into OpenTelemetry rather than fight. Don't dwell on the history — the win is what the standard ENABLES: instrument once, send it anywhere, and it became the industry default. Rivals collaborating made that possible.
 Transition: Different domain, same lesson — Kubernetes did it with a conformance baseline.
 -->
 
@@ -649,18 +657,22 @@ boolean on = client.getBooleanValue("v2_enabled", false);
 ````
 
 <div class="grid grid-cols-4 gap-3 mt-6 text-center text-xs">
-  <div class="p-2 rounded border border-gray-200"><div class="font-bold">1 · Provider</div><div class="opacity-70">connect a flag source</div></div>
-  <div class="p-2 rounded border border-gray-200"><div class="font-bold">2 · Client</div><div class="opacity-70">cheap, scoped handle</div></div>
-  <div class="p-2 rounded border border-gray-200"><div class="font-bold">3 · Evaluate</div><div class="opacity-70">name + default → value</div></div>
-  <div class="p-2 rounded border border-orange-400/70"><div class="font-bold">↺ Swap</div><div class="opacity-70">only the provider line</div></div>
+  <div class="p-2 rounded border border-gray-200 transition-opacity duration-300" :class="$clicks >= 0 ? 'opacity-100' : 'opacity-0'"><div class="font-bold">1 · Provider</div><div class="opacity-70">connect a flag source</div></div>
+  <div class="p-2 rounded border border-gray-200 transition-opacity duration-300" :class="$clicks >= 1 ? 'opacity-100' : 'opacity-0'"><div class="font-bold">2 · Client</div><div class="opacity-70">cheap, scoped handle</div></div>
+  <div class="p-2 rounded border border-gray-200 transition-opacity duration-300" :class="$clicks >= 2 ? 'opacity-100' : 'opacity-0'"><div class="font-bold">3 · Evaluate</div><div class="opacity-70">name + default → value</div></div>
+  <div class="p-2 rounded border border-orange-400/70 transition-opacity duration-300" :class="$clicks >= 3 ? 'opacity-100' : 'opacity-0'"><div class="font-bold">↺ Swap</div><div class="opacity-70">only the provider line</div></div>
 </div>
 
 <div class="text-xs opacity-60 mt-4">
-  <carbon:document class="inline-block align-middle" /> The default is mandatory — your code always gets a value back. ~130 providers in the ecosystem:
+  <carbon:document class="inline-block align-middle" /> The default is mandatory — your code always gets a value back.
+</div>
+
+<div v-if="$clicks >= 3" class="text-xs opacity-60 mt-2">
+  <carbon:plug class="inline-block align-middle" /> Swap to any of ~130 providers in the ecosystem:
   <a href="https://openfeature.dev/ecosystem" target="_blank">openfeature.dev/ecosystem</a>
 </div>
 
-<div class="abs-br m-6 flex items-end gap-2">
+<div v-if="$clicks >= 3" class="abs-br m-6 flex items-end gap-2">
   <a href="https://openfeature.dev/ecosystem" target="_blank" class="text-xs opacity-60 hover:opacity-100 text-right leading-tight pb-1 !text-inherit">
     <div>Provider ecosystem</div>
     <div class="font-mono text-[10px] opacity-80 mt-0.5">openfeature.dev/ecosystem</div>
