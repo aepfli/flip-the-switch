@@ -91,19 +91,19 @@ image: /img/simon.jpg
 
 <div class="grid grid-cols-3 gap-3 mt-6">
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
-    <div class="h-12 flex items-center justify-center">
-      <img src="/img/openfeature-horizontal-black.svg" class="max-h-10 object-contain dark:invert" />
+    <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
+      <img src="/img/openfeature-horizontal-black.svg" class="max-h-9 object-contain" />
     </div>
     <div class="text-xs mt-3">OpenFeature Maintainer</div>
   </div>
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
-    <div class="h-12 flex items-center justify-center dark:bg-white dark:px-2 dark:rounded">
+    <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
       <img src="/img/cncf-ambassador-color.svg" class="max-h-12 object-contain" />
     </div>
     <div class="text-xs mt-3">CNCF Ambassador</div>
   </div>
   <div class="rounded border border-gray-200 p-3 text-center flex flex-col items-center justify-between">
-    <div class="h-12 flex items-center justify-center dark:bg-white dark:px-2 dark:rounded">
+    <div class="h-14 w-full flex items-center justify-center bg-white rounded p-2">
       <img src="/img/logos/aaif-ambassador.png" class="max-h-12 object-contain" />
     </div>
     <div class="text-xs mt-3">AAIF Ambassador</div>
