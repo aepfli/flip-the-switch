@@ -41,6 +41,11 @@ layout: section
     → Take-aways → Community CTA
 -->
 
+<!--
+Beat: Open big. Title slide — land the promise: feature flags plus open standards, no vendor pitch. One line on who I am, then move fast.
+Transition: But before the upside, a warning — let me show you how NOT to do feature flags.
+-->
+
 ---
 layout: section
 ---
@@ -49,10 +54,20 @@ layout: section
 
 A cautionary tale: Knight Capital Group, August 2012.
 
+<!--
+Beat: Set up the cautionary tale — Knight Capital, August 2012. Don't reveal the numbers yet; just promise it's a story about a feature flag gone wrong. (quick)
+Transition: Picture the trading floor that morning — and what one flag did to it.
+-->
+
 ---
 layout: image
 image: /img/knight_capital.webp
 ---
+
+<!--
+Beat: Full-bleed image beat — let it sit. A trading firm, a normal deploy day. Build tension before the body of the story. (quick — don't linger)
+Transition: So what actually happened?
+-->
 
 ---
 layout: default
@@ -79,6 +94,11 @@ layout: default
     <QRCode data="https://blog.statsig.com/how-to-lose-half-a-billion-dollars-with-bad-feature-flags-ccebb26adeec" :width="90" :height="90" :margin="2" />
   </div>
 </div>
+
+<!--
+Beat: Land the gut-punch one click at a time: half a billion dollars, in one hour, from a feature flag, deployed to 7 of 8 servers, on repurposed code. Let each click breathe — the escalation is the point.
+Transition: Flags are powerful enough to do that — so who am I to talk about getting them right?
+-->
 
 ---
 layout: image-right
@@ -123,6 +143,11 @@ image: /img/simon.jpg
   <div>🦋 @aepfli.bsky.social</div>
 </div>
 
+<!--
+Beat: Quick credibility, no résumé reading: OpenFeature maintainer, CNCF + AAIF ambassador, fractional DevRel at Flagsmith. Stress I help build a standard in the open — that's why I care. (quick)
+Transition: Here's the map for the next 25 minutes.
+-->
+
 ---
 layout: default
 ---
@@ -155,6 +180,11 @@ layout: default
 
 </div>
 
+<!--
+Beat: Three-click roadmap: (1) the switch & the trap, (2) how open standards solved this elsewhere, (3) what it unlocks. Set expectations so people can follow the arc. (quick)
+Transition: Start with the obvious win — what a feature flag actually buys you.
+-->
+
 ---
 layout: section
 ---
@@ -163,11 +193,21 @@ layout: section
 
 ## What a feature flag actually buys you
 
+<!--
+Beat: Section divider — a breath. We're leaving the horror story and looking at the legitimate upside. (quick)
+Transition: First, the definition — what a flag actually is.
+-->
+
 ---
 layout: statement
 ---
 
 Feature flags <span v-mark.highlight.yellow="1">enable, disable, or change behavior</span> of features in a product or service <span v-mark.highlight.yellow="2">at runtime</span> — <span v-mark.highlight.yellow="3">without modifying the source code</span>.
+
+<!--
+Beat: The working definition. Three marks land in sequence: change behavior, at runtime, without touching source. That last clause is the whole promise.
+Transition: That definition buys you two superpowers — let's take them one at a time, starting with coordination and targeting.
+-->
 
 ---
 layout: default
@@ -192,6 +232,11 @@ layout: default
     <div class="text-sm opacity-70">beta testers, enterprise tier, a single region — each sees a different flag value</div>
   </div>
 </div>
+
+<!--
+Beat: First superpower: coordinate and target. Synchronized rollouts across services, A/B experiments, targeted releases. Flags decouple "who sees what" from deploys.
+Transition: The second superpower is about risk — shipping with confidence.
+-->
 
 ---
 layout: default
@@ -221,6 +266,11 @@ layout: default
   Toggle a feature. Decouple a release. That part is <em>true</em>.
 </div>
 
+<!--
+Beat: Second superpower: confidence. Deploy is not release, kill switch, progressive rollout. The closing line is the pivot — "that part is true" — i.e. the upside is real, but it's only half the story.
+Transition: All of that is true. Now the part nobody puts on the sales slide — the trap.
+-->
+
 ---
 layout: section
 ---
@@ -228,6 +278,11 @@ layout: section
 # The Trap
 
 ## The part nobody tells you
+
+<!--
+Beat: Tone shift — section divider into the cost. Slow down here; this is the heart of act 2. (quick)
+Transition: It starts the day you reach for a vendor SDK.
+-->
 
 ---
 layout: default
@@ -265,6 +320,11 @@ layout: default
 
 </div>
 
+<!--
+Beat: The three-step slide into lock-in: quick win → bespoke SDK woven through every call site → locked in. The cost of leaving quietly became the customer's problem.
+Transition: And you don't even have to do anything wrong — the ground shifts under you.
+-->
+
 ---
 layout: statement
 ---
@@ -292,6 +352,11 @@ layout: statement
 <div class="text-lg opacity-80 mt-10">
   The toggle was easy. <b>The lock-in is the bill.</b>
 </div>
+
+<!--
+Beat: Three ways the ground shifts without your input: prices triple, they get acquired, they stop caring. Punchline — the toggle was easy, the lock-in is the bill.
+Transition: And lock-in at one vendor is only half the pain — zoom out to the whole company.
+-->
 
 ---
 layout: default
@@ -323,10 +388,20 @@ layout: default
   We want to <b>observe</b> — to get insight and understand the system. That's not the same as running <em>observability</em>, and it shouldn't require knowing the code.
 </div>
 
+<!--
+Beat: The org-wide problem: many teams, many tools, no standard. You can't see across it, can't get insight, can't understand the system. The closing line is the thesis — we want to observe, not run observability, and it shouldn't need code knowledge.
+Transition: Hold that frustration — because this exact problem has been solved before, by other communities.
+-->
+
 ---
 layout: image
 image: /img/breaks/frost-fence.jpg
 ---
+
+<!--
+Beat: Visual breath between acts. A fence in frost — barriers, boundaries. Pause, then reset energy for act 3. (quick — don't linger)
+Transition: Here's the reassuring part: this is not a new problem.
+-->
 
 ---
 layout: section
@@ -335,6 +410,11 @@ layout: section
 # This is not a new problem
 
 ## Other communities have been here before
+
+<!--
+Beat: Section divider — fragmentation and lock-in aren't unique to flags. Two precedents coming: observability and containers. (quick)
+Transition: Start with observability — OpenTelemetry.
+-->
 
 ---
 layout: default
@@ -363,6 +443,11 @@ layout: default
   Standards didn't just solve a technical problem. They changed how rivals <em>collaborated</em>.
 </div>
 
+<!--
+Beat: OpenTracing and OpenCensus split the observability world; in 2019 they MERGED into OpenTelemetry instead of fighting to the death. Now the second-most-active CNCF project. Key word: rivals chose to collaborate.
+Transition: Different domain, same lesson — Kubernetes did it with a conformance baseline.
+-->
+
 ---
 layout: default
 ---
@@ -386,6 +471,11 @@ layout: default
   A shared baseline turned a zero-sum fight into a market everyone could build on.
 </div>
 
+<!--
+Beat: Certified Kubernetes — one conformance baseline turned a fractured ecosystem into 100+ certified distros your workload moves between without a rewrite. A shared floor becomes a market.
+Transition: Two examples, one lesson — let me say it plainly.
+-->
+
 ---
 layout: statement
 ---
@@ -394,10 +484,20 @@ Standards don't just solve technical problems.
 
 <div class="text-3xl font-bold mt-6">They change how communities collaborate.</div>
 
+<!--
+Beat: The thesis of act 3, stated flat: standards change how communities collaborate. Let it land — this is the bridge to OpenFeature.
+Transition: So what happens when you apply that lesson to feature flags?
+-->
+
 ---
 layout: image
 image: /img/breaks/mist-mountain.jpg
 ---
+
+<!--
+Beat: Visual breath before the reveal. Misty mountain — a summit ahead. Reset, then introduce the project. (quick — don't linger)
+Transition: Enter OpenFeature.
+-->
 
 ---
 layout: center
@@ -415,6 +515,11 @@ layout: center
   </div>
 </div>
 
+<!--
+Beat: The reveal — OpenFeature: vendor-neutral, community-driven standard for feature flagging, CNCF Incubating. Logo moment; say the one-line pitch and let the badge do the credibility work.
+Transition: Here's the precise definition.
+-->
+
 ---
 layout: statement
 ---
@@ -430,6 +535,11 @@ OpenFeature is an <span v-mark.highlight.yellow="1">open specification</span> th
     <QRCode data="https://openfeature.dev/docs/reference/intro" :width="90" :height="90" :margin="2" />
   </div>
 </div>
+
+<!--
+Beat: The formal definition. Two marks: it's an open specification, and a vendor-agnostic, community-driven API that works with your existing flag tool. Emphasis on "works with your favorite tool" — not a replacement.
+Transition: Now the part that makes OpenFeature different from OTel — it was born open.
+-->
 
 ---
 layout: default
@@ -471,6 +581,11 @@ layout: default
   No merge needed. The collaboration <em>was</em> the starting point.
 </div>
 
+<!--
+Beat: The contrast with OTel: no after-the-fact merge. Timeline — KubeCon Valencia 2022, CNCF Sandbox, Incubating 2023, multi-vendor today. Competitors collaborated BEFORE anyone shipped a rival standard. The collaboration was the starting point.
+Transition: Enough history — let me show you how it actually works.
+-->
+
 ---
 layout: center
 ---
@@ -490,6 +605,11 @@ layout: center
     <QRCode data="https://openfeature.dev/docs/reference/intro#what-is-openfeature" :width="90" :height="90" :margin="2" />
   </div>
 </div>
+
+<!--
+Beat: The architecture in one picture: your code talks to one Evaluation API; a Provider adapts that to whichever tool you use. The provider is the swappable seam — that's the whole trick.
+Transition: Let's see that seam in code — how an evaluation actually runs.
+-->
 
 ---
 layout: default
@@ -550,6 +670,11 @@ boolean on = client.getBooleanValue("v2_enabled", false);
   </div>
 </div>
 
+<!--
+Beat: Magic-move walkthrough — set provider at startup, get a client, evaluate by name with a mandatory default. The payoff is the last step: swapping flagd for Flagsmith changes ONE line. The default means your code always gets a value back. ~130 providers.
+Transition: "But surely a neutral API can't do real targeting?" — it can. Watch.
+-->
+
 ---
 layout: default
 ---
@@ -575,6 +700,11 @@ boolean on =
   <carbon:information class="inline-block align-middle" /> Per-user, per-region, per-tenant targeting and percentage rollouts — the standard defines the <em>input</em>, the provider does the evaluation.
 </div>
 
+<!--
+Beat: Vendor-neutral is not lowest-common-denominator. Build an EvaluationContext (email, region, targeting key) and pass it — clicks reveal context build, then the same evaluate call with context. The spec defines the input shape; the provider still does the real dynamic targeting and percentage rollouts.
+Transition: So pull it all together into one promise.
+-->
+
 ---
 layout: fact
 ---
@@ -597,10 +727,20 @@ Swap providers without rewriting · target dynamically · never welded to one co
   </div>
 </div>
 
+<!--
+Beat: The recap of act 4, stated as a fact: one API, any vendor — swap without rewriting, target dynamically, never welded to one company again. The quote anchors what a provider is. This is the "concept recap" beat.
+Transition: Take a breath — then let's talk about what that freedom unlocks.
+-->
+
 ---
 layout: image
 image: /img/breaks/spring-blossoms.jpg
 ---
+
+<!--
+Beat: Visual breath — spring blossoms, new growth. The mood turns from "escape the trap" to "what becomes possible." (quick — don't linger)
+Transition: Here's what an open standard actually unlocks.
+-->
 
 ---
 layout: section
@@ -609,6 +749,11 @@ layout: section
 # What an open standard unlocks
 
 ## Less friction → more room to build
+
+<!--
+Beat: Section divider — less friction means more room to build. Set up the ecosystem payoff. (quick)
+Transition: Start with what got built directly on the neutral base.
+-->
 
 ---
 layout: default
@@ -642,6 +787,11 @@ layout: default
 
 </div>
 
+<!--
+Beat: Four things a shared surface produced: ~130 providers all speaking one API, flagd (a free OSS reference provider born because the standard existed), OFREP (a standard HTTP eval protocol — a whole new integration shape), and CLI/tooling. None of this exists without the shared contract.
+Transition: Tooling is the obvious win — the deeper one is what it does to the market.
+-->
+
 ---
 layout: default
 ---
@@ -672,10 +822,20 @@ layout: default
   The standard isn't a constraint on the market. It's the floor the market builds on.
 </div>
 
+<!--
+Beat: Lock-in protects incumbents; a standard lowers switching cost, so vendors compete on value. Lower barrier to entry, compete on the product, mix and experiment (name-check Flagsmith as an open-source example). The standard is the floor, not the ceiling.
+Transition: That all sounds great — so why doesn't everyone do it? Because building a standard in the open is hard.
+-->
+
 ---
 layout: image
 image: /img/breaks/ruin-archway.jpg
 ---
+
+<!--
+Beat: Visual breath — a ruined archway. Something built to last, and what it takes. Sets the reflective tone for the hard-part act. (quick — don't linger)
+Transition: Now the honest part: building a standard in the open.
+-->
 
 ---
 layout: section
@@ -684,6 +844,11 @@ layout: section
 # Building a standard in the open
 
 ## The part that's harder than the code
+
+<!--
+Beat: Section divider — the hard part isn't technical, it's human. Slow down; this is where I speak from experience as a maintainer. (quick)
+Transition: Let me show you why the code is the easy part.
+-->
 
 ---
 layout: default
@@ -716,6 +881,11 @@ layout: default
   </div>
 
 </div>
+
+<!--
+Beat: What "building in the open" actually takes: rivals at one table, neutral CNCF governance, spec-first (write the contract, then nine languages conform), and conformance test suites that keep "compatible" honest. The hard work is the agreement, not the SDK.
+Transition: Be honest about the cost — standards aren't free.
+-->
 
 ---
 layout: default
@@ -751,6 +921,11 @@ layout: default
 
 </div>
 
+<!--
+Beat: The honest ledger — don't oversell. Pros: lower barrier, no single owner, diversity, real choice, interoperability. Cons: slow consensus, governance politics, migration cost even between compliant impls, lowest-common-denominator risk, the CNCF graveyard. Credibility comes from naming the downsides.
+Transition: But here's why it's still worth it — and it comes down to one line.
+-->
+
 ---
 layout: statement
 ---
@@ -763,16 +938,31 @@ You can write the code in a weekend.
   And the agreement is the part that's actually worth something — because it's the part that outlives any one vendor.
 </div>
 
+<!--
+Beat: The money line of act 6 — you can write the code in a weekend; the agreement takes a community. And the agreement is what outlives any one vendor. Let it sit; this is the emotional core.
+Transition: That brings us to the summit — the take-aways.
+-->
+
 ---
 layout: image
 image: /img/breaks/summit-vista.jpg
 ---
+
+<!--
+Beat: Final visual breath — summit vista, the view from the top. We've made the climb; now wrap up. (quick — don't linger)
+Transition: Three things to take home.
+-->
 
 ---
 layout: section
 ---
 
 # Take-aways
+
+<!--
+Beat: Section divider into the close. Signal we're landing the plane. (quick)
+Transition: Here are my three.
+-->
 
 ---
 layout: default
@@ -798,6 +988,11 @@ layout: default
 </div>
 
 </div>
+
+<!--
+Beat: The three take-aways: evaluate governance not just the spec; contribution is self-interest (if you're not in the room, someone else's priorities win); a standard is only as good as its community — otherwise it's just slower lock-in. This is the whole talk distilled.
+Transition: And that last point is an invitation — so join us.
+-->
 
 ---
 layout: default
@@ -851,6 +1046,11 @@ layout: default
   First-time contributors very welcome — maintainers label good-first-issues on GitHub.
 </div>
 
+<!--
+Beat: The community CTA — four concrete doors in: CNCF Slack, GitHub, community page, public meetings. Make it personal and low-stakes; first-timers welcome, good-first-issues labeled. Point at the QR/links, invite one action.
+Transition: And with that, let me say thanks and open it up.
+-->
+
 ---
 layout: end
 ---
@@ -881,3 +1081,8 @@ layout: end
     <QRCode data="https://schrottner.at/flip-the-switch/" :width="90" :height="90" :margin="2" />
   </div>
 </div>
+
+<!--
+Beat: Closing line — flip the switch with confidence, on a standard no single vendor owns. Leave contact + slides QR up for the whole Q&A. Thank the room.
+Transition: (end — open for Q&A)
+-->
